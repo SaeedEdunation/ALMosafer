@@ -54,7 +54,9 @@ public class myTest {
 	}
 	@ Test (priority = 5)
 	public void CheckSearch () {
-	//String ActualSearch = driver.findElement(By.cssSelector(".sc-tln3e3-1.gvrkTi")).getText();
+	Boolean  ActualResult = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels")).isDisplayed();
+	Boolean ExpectedResult= false;
+	Assert.assertEquals(ActualResult, ExpectedResult);
 	
 	}
 	}
